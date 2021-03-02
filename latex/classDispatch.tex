@@ -1,0 +1,80 @@
+\hypertarget{classDispatch}{}\section{Dispatch Class Reference}
+\label{classDispatch}\index{Dispatch@{Dispatch}}
+
+
+{\ttfamily \#include $<$dispatch.\+h$>$}
+
+
+
+Inheritance diagram for Dispatch\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=139pt]{classDispatch__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Dispatch\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=139pt]{classDispatch__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Slots}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classDispatch_a1614e71f00049c8aa97656da43b9a760}\label{classDispatch_a1614e71f00049c8aa97656da43b9a760}} 
+void {\bfseries turnout\+State\+Change} (Q\+String name)
+\item 
+\mbox{\Hypertarget{classDispatch_a1c92dd3797f9abd81064b81fa303f8bc}\label{classDispatch_a1c92dd3797f9abd81064b81fa303f8bc}} 
+void {\bfseries message\+Received} (Q\+Json\+Document doc)
+\item 
+void \hyperlink{classDispatch_a9778159aee91f361533c1121b49b507b}{on\+Connected} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classDispatch_aad7b6c1bd066e905cf3340061eed3edb}\label{classDispatch_aad7b6c1bd066e905cf3340061eed3edb}} 
+{\bfseries Dispatch} (\hyperlink{classMessaging}{Messaging} $\ast$client)
+\item 
+void \hyperlink{classDispatch_aec3da26ad4b3550ce4d47fe5c5ed2f27}{add\+Turnout} (\hyperlink{classTurnout}{Turnout} $\ast$turnout, bool persist=true)
+\begin{DoxyCompactList}\small\item\em Called when a turnout is added over M\+Q\+TT OR via the ini file. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Provides dispatch type activities for handing messages received and send over time. Each new turnout is stored in a map, and when a message comes in for a specific turnout, that turnout is pulled from the map and acted on. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classDispatch_aec3da26ad4b3550ce4d47fe5c5ed2f27}\label{classDispatch_aec3da26ad4b3550ce4d47fe5c5ed2f27}} 
+\index{Dispatch@{Dispatch}!add\+Turnout@{add\+Turnout}}
+\index{add\+Turnout@{add\+Turnout}!Dispatch@{Dispatch}}
+\subsubsection{\texorpdfstring{add\+Turnout()}{addTurnout()}}
+{\footnotesize\ttfamily void Dispatch\+::add\+Turnout (\begin{DoxyParamCaption}\item[{\hyperlink{classTurnout}{Turnout} $\ast$}]{turnout,  }\item[{bool}]{persist = {\ttfamily true} }\end{DoxyParamCaption})}
+
+
+
+Called when a turnout is added over M\+Q\+TT OR via the ini file. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em turnout} & A pointer to a \hyperlink{classTurnout}{Turnout} base which can ben L\+E\+F\+T/\+R\+I\+G\+H\+T/\+W\+YE \\
+\hline
+{\em persist} & Boolean which indicates whether we should try to persist this value\\
+\hline
+\end{DoxyParams}
+This will take a new turnout pointer, send a notice over M\+Q\+TT that it was added and then store it to disk if that\textquotesingle{}s asked for via persist. \mbox{\Hypertarget{classDispatch_a9778159aee91f361533c1121b49b507b}\label{classDispatch_a9778159aee91f361533c1121b49b507b}} 
+\index{Dispatch@{Dispatch}!on\+Connected@{on\+Connected}}
+\index{on\+Connected@{on\+Connected}!Dispatch@{Dispatch}}
+\subsubsection{\texorpdfstring{on\+Connected}{onConnected}}
+{\footnotesize\ttfamily void Dispatch\+::on\+Connected (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+Called async whenever the M\+Q\+TT client connects or reconnects 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/pi/mrr\+\_\+turnouts/src/dispatch.\+h\item 
+/home/pi/mrr\+\_\+turnouts/src/dispatch.\+cpp\end{DoxyCompactItemize}

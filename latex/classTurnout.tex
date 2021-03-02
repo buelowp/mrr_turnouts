@@ -1,0 +1,99 @@
+\hypertarget{classTurnout}{}\section{Turnout Class Reference}
+\label{classTurnout}\index{Turnout@{Turnout}}
+
+
+Inheritance diagram for Turnout\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=304pt]{classTurnout__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Turnout\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=136pt]{classTurnout__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classTurnout_aa7271edc7dd71de1993cb84efb433de4}\label{classTurnout_aa7271edc7dd71de1993cb84efb433de4}} 
+enum {\bfseries Direction} \{ {\bfseries L\+E\+FT}, 
+{\bfseries R\+I\+G\+HT}, 
+{\bfseries W\+YE}
+ \}
+\item 
+\mbox{\Hypertarget{classTurnout_a9b93fecdd78942538e79302c81fcc727}\label{classTurnout_a9b93fecdd78942538e79302c81fcc727}} 
+enum {\bfseries State} \{ {\bfseries M\+A\+IN}, 
+{\bfseries S\+I\+D\+I\+NG}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Signals}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classTurnout_af184ceca5457de620541017d711204b6}\label{classTurnout_af184ceca5457de620541017d711204b6}} 
+void {\bfseries state\+Change} (Q\+String name)
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classTurnout_a5f5e6fc12ec957758010cd4eb3ed41b7}\label{classTurnout_a5f5e6fc12ec957758010cd4eb3ed41b7}} 
+{\bfseries Q\+\_\+\+E\+N\+UM} (Direction)
+\item 
+\mbox{\Hypertarget{classTurnout_a337a41170c90bd67ce308c0a39be83ab}\label{classTurnout_a337a41170c90bd67ce308c0a39be83ab}} 
+{\bfseries Turnout} (int pin, Q\+String name, Direction dir, Q\+Object $\ast$parent=nullptr)
+\item 
+\mbox{\Hypertarget{classTurnout_ad732b5d164b51989efbf15910e89207a}\label{classTurnout_ad732b5d164b51989efbf15910e89207a}} 
+{\bfseries Turnout} (int pin, Direction dir, Q\+Object $\ast$parent=nullptr)
+\item 
+\mbox{\Hypertarget{classTurnout_a3756614bdf1954b7855a29148bc388e6}\label{classTurnout_a3756614bdf1954b7855a29148bc388e6}} 
+void {\bfseries no} ()
+\item 
+\mbox{\Hypertarget{classTurnout_ad012bbace4a365d530640c511b69014f}\label{classTurnout_ad012bbace4a365d530640c511b69014f}} 
+void {\bfseries nc} ()
+\item 
+\mbox{\Hypertarget{classTurnout_a18d8e29c202ed64091fcc9c61c06cbaf}\label{classTurnout_a18d8e29c202ed64091fcc9c61c06cbaf}} 
+Q\+String {\bfseries name} ()
+\item 
+\mbox{\Hypertarget{classTurnout_ae2f2d2c69fe1cc863b29064092460c62}\label{classTurnout_ae2f2d2c69fe1cc863b29064092460c62}} 
+Q\+String {\bfseries direction} ()
+\item 
+\mbox{\Hypertarget{classTurnout_a1f27c3cd43df36267f9311fc4fbd58fb}\label{classTurnout_a1f27c3cd43df36267f9311fc4fbd58fb}} 
+Q\+String {\bfseries state} ()
+\item 
+\mbox{\Hypertarget{classTurnout_a276a6d7779e7191057adc89c35cf7333}\label{classTurnout_a276a6d7779e7191057adc89c35cf7333}} 
+int {\bfseries pin} ()
+\item 
+\mbox{\Hypertarget{classTurnout_ae7197fb76f53d720c0fa2828746bd913}\label{classTurnout_ae7197fb76f53d720c0fa2828746bd913}} 
+virtual bool {\bfseries is\+On\+Main} ()
+\item 
+\mbox{\Hypertarget{classTurnout_a0f99553ab7a67b90e449bf22f7594d8e}\label{classTurnout_a0f99553ab7a67b90e449bf22f7594d8e}} 
+virtual void {\bfseries set\+State} (State state)=0
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classTurnout_a0e975ccac37e52ad1cad7adea5ef130b}\label{classTurnout_a0e975ccac37e52ad1cad7adea5ef130b}} 
+Direction {\bfseries m\+\_\+direction}
+\item 
+\mbox{\Hypertarget{classTurnout_a86db8a9921b41043a984efbeada6d861}\label{classTurnout_a86db8a9921b41043a984efbeada6d861}} 
+int {\bfseries m\+\_\+pin}
+\item 
+\mbox{\Hypertarget{classTurnout_aeb7d7a0b3f175d60f07babe7b6173988}\label{classTurnout_aeb7d7a0b3f175d60f07babe7b6173988}} 
+Q\+String {\bfseries m\+\_\+name}
+\item 
+\mbox{\Hypertarget{classTurnout_ab4e32db640be95dbd4c0d7ca70a43b45}\label{classTurnout_ab4e32db640be95dbd4c0d7ca70a43b45}} 
+State {\bfseries m\+\_\+state}
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/pi/mrr\+\_\+turnouts/src/turnout.\+h\item 
+/home/pi/mrr\+\_\+turnouts/src/turnout.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,5 @@
+<map id="Turnout" name="Turnout">
+<area shape="rect" id="node3" href="$classLeftTurnout.html" title="LeftTurnout" alt="" coords="5,155,100,181"/>
+<area shape="rect" id="node4" href="$classRightTurnout.html" title="RightTurnout" alt="" coords="125,155,229,181"/>
+<area shape="rect" id="node5" href="$classWye.html" title="Wye" alt="" coords="253,155,303,181"/>
+</map>
