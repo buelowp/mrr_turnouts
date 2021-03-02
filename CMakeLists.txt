@@ -2,8 +2,8 @@ cmake_minimum_required(VERSION 3.0)
 
 project(turnouts)
 
-file (GLOB SOURCES "${CMAKE_CURRENT_SOURCE_DIR}/*.cpp")
-file (GLOB HEADERS "${CMAKE_CURRENT_SOURCE_DIR}/*.h")
+file (GLOB SOURCES "${CMAKE_CURRENT_SOURCE_DIR}/src/*.cpp")
+file (GLOB HEADERS "${CMAKE_CURRENT_SOURCE_DIR}/src/*.h")
 
 # Find includes in corresponding build directories
 set(CMAKE_INCLUDE_CURRENT_DIR ON)
