@@ -35,3 +35,7 @@ HW used
 That's it. Plug it into the network however you want. See the wiki for a MQTT JSON description
 of the messaging
 
+## Getting setup
+
+Make the project, and copy turnouts.ini into ~/.config/mrr, making that directory as it likely
+doesn't exist.
